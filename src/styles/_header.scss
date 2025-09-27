@@ -1,0 +1,174 @@
+header {
+  width: 100%;
+  max-width: 1440px;
+  height: 100px;
+  margin: 0 auto;
+  @extend %align-center;
+
+  .navbar {
+    z-index: 10;
+    width: 100%;
+    max-width: 1286px;
+    height: 41px;
+    justify-content: space-between;
+    @extend %align-center;
+
+    @include laptop {
+      max-width: 936px;
+    }
+    @include tablet {
+      max-width: 700px;
+    }
+    @include phone {
+      max-width: 450px;
+      margin-left: -10px;
+    }
+
+    &__logo {
+      height: 41px;
+      width: 100%;
+      max-width: 185px;
+      justify-content: space-between;
+      font-weight: 800;
+      font-size: clamp(1.75rem, 1.625rem + 0.4167vw, 2.125rem);
+      cursor: default;
+      @extend %align-center;
+
+      @include tablet {
+        justify-content: center;
+      }
+      @include phone {
+        justify-content: center;
+        margin-left: -7px;
+      }
+
+      img {
+        height: 32px;
+        width: 100%;
+        max-width: 50px;
+      }
+    }
+
+    &__menu {
+      list-style: none;
+      width: 100%;
+      max-width: 430px;
+      justify-content: space-between;
+      @extend %align-center;
+
+      @include laptop {
+        max-width: 330px;
+      }
+      @include tablet {
+        position: absolute;
+        top: 100px;
+        right: 0;
+        width: 150px;
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+        background: white;
+        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 0 3px;
+        overflow: hidden;
+        max-height: 0;
+        opacity: 0;
+        pointer-events: none;
+        transition: max-height 0.5s ease, opacity 0.3s ease 0.2s;
+
+        a {
+          opacity: 0;
+          transition: opacity 0.2s ease, transform 0.2s ease;
+          transition-delay: 0s;
+        }
+      }
+
+      a {
+        text-decoration: none;
+        font-weight: 500;
+        font-size: 16px;
+        color: black;
+        display: inline-block;
+        transition: transform 0.05s ease-in-out, color 0.1s;
+
+        &:hover {
+          transform: scale(1.05);
+          color: #65501a;
+        }
+        &:active {
+          transform: scale(0.95);
+          color: #503f14;
+        }
+      }
+
+      &.active {
+        max-height: 400px;
+        opacity: 1;
+        pointer-events: auto;
+        transition: max-height 0.5s ease, opacity 0.3s ease 0s;
+
+        a {
+          opacity: 1;
+          transform: translateY(0);
+          transition-delay: 0.2s;
+        }
+      }
+    }
+
+    &__icons {
+      width: 100%;
+      max-width: 215px;
+      height: 28px;
+      justify-content: space-between;
+      @extend %align-center;
+
+      @include laptop {
+        max-width: 175px;
+      }
+      @include phone {
+        display: none;
+      }
+
+      img {
+        cursor: pointer;
+        display: inline-block;
+        transition: transform 0.05s ease-in-out, color 0.1s;
+
+        &:hover {
+          transform: scale(1.05);
+        }
+        &:active {
+          transform: scale(0.95);
+        }
+      }
+    }
+
+    &__hamburger {
+      width: 100%;
+      max-width: 30px;
+      height: 30px;
+      display: none;
+      cursor: pointer;
+      transition: transform 0.05s ease-in-out, color 0.1s;
+
+      &:hover {
+        transform: scale(1.05);
+        color: #65501a;
+      }
+      &:active {
+        transform: scale(0.95);
+        color: #503f14;
+      }
+
+      @include tablet {
+        display: block;
+      }
+      @include phone {
+        max-width: 35px;
+        height: 35px;
+      }
+    }
+  }
+}

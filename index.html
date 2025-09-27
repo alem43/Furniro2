@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="preload" as="image" href="/images/hero-background.webp" />
+    <link rel="icon" type="image/svg+xml" href="/images/furniro.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Furniro - Discover our new collection of stylish, high-quality furniture for your home. Shop Dining, Living, and Bedroom sets with fast delivery and great prices." />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      as="style" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+      media="print"
+      onload="this.media='all'" />
+    <link
+      rel="preload"
+      as="image"
+      href="/images/hero-background.webp"
+      type="image/webp" />
+    <link rel="stylesheet" href="/src/styles/home.css" />
+    <title>Furniro</title>
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar__logo">
+          <img src="/images/logo.svg" alt="logo" loading="lazy" />
+          Furniro
+        </div>
+        <ul class="navbar__menu">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="/shop.html">Shop</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+        <div class="navbar__icons">
+          <img src="/images/account.svg" alt="account" width="24" height="24" />
+          <img src="/images/search.svg" alt="search" width="24" height="24" />
+          <img
+            src="/images/shopping-cart.svg"
+            alt="cart"
+            width="24"
+            height="24" />
+          <img src="/images/heart.svg" alt="heart" width="24" height="24" />
+        </div>
+        <img
+          src="/images/hamburger-icon.svg"
+          alt="hamburger-icon"
+          class="navbar__hamburger"
+          loading="lazy" />
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero">
+        <img
+          src="/images/hero-background.webp"
+          alt=""
+          class="hero__bg"
+          width="1440"
+          height="717"
+          decoding="async"
+          fetchpriority="high" />
+        <div class="hero__content">
+          <h2 class="hero__content--new">New Arrival</h2>
+          <h2 class="hero__content--title">Discover Our New Collection</h2>
+          <p class="hero__content--subtitle">
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut elit
+            tellus, luctus nec ullamcorper mattis.
+          </p>
+          <button class="hero__content--button">BUY NOW</button>
+        </div>
+      </section>
+      <section class="browse-range">
+        <div class="browse-range__title">
+          <h2>Browse The Range</h2>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+        </div>
+        <div class="browse-range__cards">
+          <div class="browse-range__cards--card">
+            <img src="/images/dining-image.webp" alt="dining-image" />
+            <h3>Dining</h3>
+          </div>
+          <div class="browse-range__cards--card">
+            <img src="/images/living-image.webp" alt="living-image" />
+            <h3>Living</h3>
+          </div>
+          <div class="browse-range__cards--card">
+            <img src="/images/bedroom-image.webp" alt="bedroom-image" />
+            <h3>Bedroom</h3>
+          </div>
+        </div>
+      </section>
+      <section class="our-products">
+        <div class="our-products__title">
+          <h2>Our Products</h2>
+        </div>
+        <div class="our-products__cards">
+          <div class="our-products__cards--card">
+            <img
+              src="/images/product-syltherine.webp"
+              alt="product-syltherine" />
+            <h3>Syltherine</h3>
+            <p>Stylish cafe chair</p>
+            <div class="our-products__cards--card__price">
+              <span class="our-products__cards--card__price--normal"
+                >Rp 2.500.000</span
+              >
+            </div>
+            <div class="our-products__cards--card__hover">
+              <div class="our-products__cards--card__hover--content">
+                <button
+                  class="our-products__cards--card__hover--content__button">
+                  Add to cart
+                </button>
+                <div class="our-products__cards--card__hover--content__options">
+                  <div>
+                    <img src="/images/share-option.svg" alt="share-option" />
+                    <h4>Share</h4>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/compare-option.svg"
+                      alt="compare-option" />
+                    <h4>Compare</h4>
+                  </div>
+                  <div>
+                    <img src="/images/like-option.svg" alt="like-option" />
+                    <h4>Like</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-products__cards--card">
+            <img src="/images/product-leviosa.webp" alt="product-leviosa" />
+            <h3>Leviosa</h3>
+            <p>Stylish cafe chair</p>
+            <div class="our-products__cards--card__price">
+              <span class="our-products__cards--card__price--normal"
+                >Rp 2.500.000</span
+              >
+            </div>
+            <div class="our-products__cards--card__hover">
+              <div class="our-products__cards--card__hover--content">
+                <button
+                  class="our-products__cards--card__hover--content__button">
+                  Add to cart
+                </button>
+                <div class="our-products__cards--card__hover--content__options">
+                  <div>
+                    <img src="/images/share-option.svg" alt="share-option" />
+                    <h4>Share</h4>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/compare-option.svg"
+                      alt="compare-option" />
+                    <h4>Compare</h4>
+                  </div>
+                  <div>
+                    <img src="/images/like-option.svg" alt="like-option" />
+                    <h4>Like</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-products__cards--card">
+            <img src="/images/product-lolito.webp" alt="product-lolito" />
+            <h3>Lolito</h3>
+            <p>Luxury big sofa</p>
+            <div class="our-products__cards--card__price">
+              <span class="our-products__cards--card__price--normal"
+                >Rp 7.000.000</span
+              >
+            </div>
+            <div class="our-products__cards--card__hover">
+              <div class="our-products__cards--card__hover--content">
+                <button
+                  class="our-products__cards--card__hover--content__button">
+                  Add to cart
+                </button>
+                <div class="our-products__cards--card__hover--content__options">
+                  <div>
+                    <img src="/images/share-option.svg" alt="share-option" />
+                    <h4>Share</h4>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/compare-option.svg"
+                      alt="compare-option" />
+                    <h4>Compare</h4>
+                  </div>
+                  <div>
+                    <img src="/images/like-option.svg" alt="like-option" />
+                    <h4>Like</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-products__cards--card">
+            <img src="/images/product-respira.webp" alt="product-respira" />
+            <h3>Respira</h3>
+            <p>Outdoor bar table and stool</p>
+            <div class="our-products__cards--card__price">
+              <span class="our-products__cards--card__price--normal"
+                >Rp 500.000</span
+              >
+            </div>
+            <div class="our-products__cards--card__hover">
+              <div class="our-products__cards--card__hover--content">
+                <button
+                  class="our-products__cards--card__hover--content__button">
+                  Add to cart
+                </button>
+                <div class="our-products__cards--card__hover--content__options">
+                  <div>
+                    <img src="/images/share-option.svg" alt="share-option" />
+                    <h4>Share</h4>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/compare-option.svg"
+                      alt="compare-option" />
+                    <h4>Compare</h4>
+                  </div>
+                  <div>
+                    <img src="/images/like-option.svg" alt="like-option" />
+                    <h4>Like</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-products__cards--card">
+            <img src="/images/product-grifo.webp" alt="product-griffo" />
+            <h3>Grifo</h3>
+            <p>Night lamp</p>
+            <div class="our-products__cards--card__price">
+              <span class="our-products__cards--card__price--normal"
+                >Rp 1.500.000</span
+              >
+            </div>
+            <div class="our-products__cards--card__hover">
+              <div class="our-products__cards--card__hover--content">
+                <button
+                  class="our-products__cards--card__hover--content__button">
+                  Add to cart
+                </button>
+                <div class="our-products__cards--card__hover--content__options">
+                  <div>
+                    <img src="/images/share-option.svg" alt="share-option" />
+                    <h4>Share</h4>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/compare-option.svg"
+                      alt="compare-option" />
+                    <h4>Compare</h4>
+                  </div>
+                  <div>
+                    <img src="/images/like-option.svg" alt="like-option" />
+                    <h4>Like</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-products__cards--card">
+            <img src="/images/product-muggo.webp" alt="product-muggo" />
+            <h3>Muggo</h3>
+            <p>Small mug</p>
+            <div class="our-products__cards--card__price">
+              <span class="our-products__cards--card__price--normal"
+                >Rp 150.000</span
+              >
+            </div>
+            <div class="our-products__cards--card__hover">
+              <div class="our-products__cards--card__hover--content">
+                <button
+                  class="our-products__cards--card__hover--content__button">
+                  Add to cart
+                </button>
+                <div class="our-products__cards--card__hover--content__options">
+                  <div>
+                    <img src="/images/share-option.svg" alt="share-option" />
+                    <h4>Share</h4>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/compare-option.svg"
+                      alt="compare-option" />
+                    <h4>Compare</h4>
+                  </div>
+                  <div>
+                    <img src="/images/like-option.svg" alt="like-option" />
+                    <h4>Like</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-products__cards--card">
+            <img src="/images/product-pingky.webp" alt="product-pingky" />
+            <h3>Pingky</h3>
+            <p>Cute bed set</p>
+            <div class="our-products__cards--card__price">
+              <span class="our-products__cards--card__price--normal"
+                >Rp 7.000.000</span
+              >
+            </div>
+            <div class="our-products__cards--card__hover">
+              <div class="our-products__cards--card__hover--content">
+                <button
+                  class="our-products__cards--card__hover--content__button">
+                  Add to cart
+                </button>
+                <div class="our-products__cards--card__hover--content__options">
+                  <div>
+                    <img src="/images/share-option.svg" alt="share-option" />
+                    <h4>Share</h4>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/compare-option.svg"
+                      alt="compare-option" />
+                    <h4>Compare</h4>
+                  </div>
+                  <div>
+                    <img src="/images/like-option.svg" alt="like-option" />
+                    <h4>Like</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="our-products__cards--card">
+            <img src="/images/product-potty.webp" alt="product-potty" />
+            <h3>Potty</h3>
+            <p>Minimalist flower pot</p>
+            <div class="our-products__cards--card__price">
+              <span class="our-products__cards--card__price--normal"
+                >Rp 500.000</span
+              >
+            </div>
+            <div class="our-products__cards--card__hover">
+              <div class="our-products__cards--card__hover--content">
+                <button
+                  class="our-products__cards--card__hover--content__button">
+                  Add to cart
+                </button>
+                <div class="our-products__cards--card__hover--content__options">
+                  <div>
+                    <img src="/images/share-option.svg" alt="share-option" />
+                    <h4>Share</h4>
+                  </div>
+                  <div>
+                    <img
+                      src="/images/compare-option.svg"
+                      alt="compare-option" />
+                    <h4>Compare</h4>
+                  </div>
+                  <div>
+                    <img src="/images/like-option.svg" alt="like-option" />
+                    <h4>Like</h4>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="our-products__show-more">
+          <button class="our-products__show-more--button">Show More</button>
+        </div>
+      </section>
+      <section class="room-inspiration">
+        <div class="room-inspiration__text">
+          <h2 class="room-inspiration__text--title">
+            50+ Beautiful rooms inspiration
+          </h2>
+          <p class="room-inspiration__text--subtitle">
+            Our designer has already created many beautiful room prototypes to
+            inspire you
+          </p>
+          <button class="room-inspiration__text--button">Explore More</button>
+        </div>
+        <div class="room-inspiration__slides">
+          <img
+            src="/images/room-picture1.webp"
+            alt="room-picture1"
+            class="room-inspiration__slides--slide1"
+            id="slide1" />
+          <img
+            src="/images/room-picture2.webp"
+            alt="room-picture2"
+            class="room-inspiration__slides--slide2"
+            id="slide2" />
+          <img
+            src="/images/room-picture3.webp"
+            alt="room-picture3"
+            class="room-inspiration__slides--slide2"
+            id="slide3" />
+          <img
+            src="/images/arrow-button.svg"
+            alt="arrow"
+            class="room-inspiration__slides--arrow"
+            id="slides-arrow" />
+          <div class="room-inspiration__slides--image-description">
+            <div class="room-inspiration__slides--image-description__text-box">
+              <p
+                class="room-inspiration__slides--image-description__text-box--number">
+                01 ─── Bedroom
+              </p>
+              <h3
+                class="room-inspiration__slides--image-description__text-box--name">
+                Inner Peace
+              </h3>
+            </div>
+            <img
+              src="/images/next-slide.svg"
+              alt="next-slide"
+              class="room-inspiration__slides--image-description__next-slide" />
+          </div>
+          <div class="room-inspiration__slides--dots" id="slide-dots">
+            <svg
+              class="room-inspiration__slides--dots__dot-inactive"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 27 27"
+              width="16"
+              height="16">
+              <circle cx="13.5" cy="13.5" r="13.5" />
+            </svg>
+            <svg
+              class="room-inspiration__slides--dots__dot-inactive"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 27 27"
+              width="11"
+              height="11">
+              <circle cx="13.5" cy="13.5" r="13.5" />
+            </svg>
+            <svg
+              class="room-inspiration__slides--dots__dot-inactive"
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 27 27"
+              width="11"
+              height="11">
+              <circle cx="13.5" cy="13.5" r="13.5" />
+            </svg>
+          </div>
+        </div>
+      </section>
+      <section class="collage">
+        <div class="collage__text">
+          <div class="collage__text--title">
+            <p>Share your setup with</p>
+          </div>
+          <div class="collage__text--hashtag">
+            <h2>#FurniroFurniture</h2>
+          </div>
+        </div>
+        <div class="collage__images">
+          <div class="collage__images--left">
+            <div class="collage__images--left__upper">
+              <div>
+                <img
+                  src="/images/collage-picture9.webp"
+                  alt="collage-picture9" />
+              </div>
+              <div>
+                <img
+                  src="/images/collage-picture8.webp"
+                  alt="collage-picture8" />
+              </div>
+            </div>
+            <div class="collage__images--left__lower">
+              <div>
+                <img
+                  src="/images/collage-picture1.webp"
+                  alt="collage-picture1" />
+              </div>
+              <div>
+                <img
+                  src="/images/collage-picture6.webp"
+                  alt="collage-picture6" />
+              </div>
+            </div>
+          </div>
+          <div class="collage__images--center">
+            <div>
+              <img src="/images/collage-picture7.webp" alt="collage-picture7" />
+            </div>
+          </div>
+          <div class="collage__images--right">
+            <div class="collage__images--right__upper">
+              <div>
+                <img
+                  src="/images/collage-picture3.webp"
+                  alt="collage-picture3" />
+              </div>
+              <div>
+                <img
+                  src="/images/collage-picture2.webp"
+                  alt="collage-picture2" />
+              </div>
+            </div>
+            <div class="collage__images--right__lower">
+              <div>
+                <img
+                  src="/images/collage-picture5.webp"
+                  alt="collage-picture5" />
+              </div>
+              <div>
+                <img
+                  src="/images/collage-picture4.webp"
+                  alt="collage-picture4" />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <section class="upper">
+        <div class="upper__logo-address">
+          <h2 class="upper__logo-address--logo">Furniro.</h2>
+          <p class="upper__logo-address--address">
+            400 University Drive Suite 200 Coral Gables, FL 33134 USA
+          </p>
+        </div>
+        <div class="upper__links">
+          <h3>Links</h3>
+          <a href="#">Home</a>
+          <a href="#">Shop</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="upper__help">
+          <h3>Help</h3>
+          <a href="#">Payment options</a>
+          <a href="#">Return</a>
+          <a href="#">Privacy Policies</a>
+        </div>
+        <div class="upper__newsletter">
+          <h3>Newsletter</h3>
+          <div class="upper__newsletter--subscription">
+            <input type="text" placeholder="Enter Your Email Address" />
+            <button>SUBSCRIBE</button>
+          </div>
+        </div>
+      </section>
+      <section class="lower">
+        <p>2023 Furniro. All rights reserved</p>
+      </section>
+    </footer>
+    <script type="module" src="/src/main.js" defer></script>
+  </body>
+</html>
