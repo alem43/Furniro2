@@ -1,0 +1,33 @@
+#site-loader {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: #ffffff;
+  z-index: 9999;
+  transition: opacity 350ms ease, visibility 350ms;
+  opacity: 1;
+  visibility: visible;
+  pointer-events: all;
+
+  &.hidden {
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+  }
+
+  .spinner {
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    border: 6px solid #ffb85bd5;
+    border-top-color: #65501a;
+    animation: spin 1s linear infinite;
+  }
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
